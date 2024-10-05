@@ -111,7 +111,7 @@ def main():
     max_scale = 2  # 增加最大缩放比例
     min_scale = 0.5
     scale_step = 0.5  # 增加缩放速度
-    font = pygame.font.Font("./fontfs/方正兰亭圆简体.ttf", 62)  # 替换为您的字体路径
+    font = pygame.font.Font("./fonts/方正兰亭圆简体.ttf", 62)  # 替换为您的字体路径
 
     # 用于保存视频的参数
     output_file = "C:/Users/July/Desktop/particle_heart_animation.mp4"
@@ -146,7 +146,7 @@ def main():
 
         # 生成并绘制文本粒子
         text_particles = draw_text_particles(
-            screen, "ZloveY", font, scale_factor, screen.get_size())
+            screen, "love", font, scale_factor, screen.get_size())
         draw_particles(screen, text_particles)
 
         # 计算缩放

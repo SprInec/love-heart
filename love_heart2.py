@@ -173,7 +173,7 @@ def main():
                     firework[0], firework[1], random.randint(100, 500)))  # 轮廓粒子的数量
                 if heart_r >= 9:
                     particles.extend(draw_text_particles(
-                        firework[0], firework[1], "ZloveY"))  # 添加文字粒子
+                        firework[0], firework[1], "love"))  # 添加文字粒子
 
                 fireworks.remove(firework)  # 移除当前烟花
 
