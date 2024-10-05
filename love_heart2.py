@@ -110,7 +110,7 @@ def heart_tip_position(x, y):
 # 绘制粒子组成的文字
 def draw_text_particles(x, y, text, font_size=60, spacing=3):
     particles = []
-    font = pygame.font.Font("F:/Resource/Fonts/方正兰亭圆简体.ttf", font_size)
+    font = pygame.font.Font("./fonts/方正兰亭圆简体.ttf", font_size)
     text_surface = font.render(text, True, (255, 192, 255))
     text_rect = text_surface.get_rect(center=(x, y))
 
@@ -173,7 +173,7 @@ def main():
                     firework[0], firework[1], random.randint(100, 500)))  # 轮廓粒子的数量
                 if heart_r >= 9:
                     particles.extend(draw_text_particles(
-                        firework[0], firework[1], "哲love颖"))  # 添加文字粒子
+                        firework[0], firework[1], "ZloveY"))  # 添加文字粒子
 
                 fireworks.remove(firework)  # 移除当前烟花
 
